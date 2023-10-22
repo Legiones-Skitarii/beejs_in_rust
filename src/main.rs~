@@ -1,0 +1,13 @@
+use std::net::Ipv4Addr;
+
+fn main() {
+    // Overflows and gives 127
+    // let localhost = Ipv4Addr::new(9999999, 0, 0, 1);
+    //println!("{:?}" , localhost);
+
+    let pattern = std::env::args().nth(1).expect("no pattern given");
+    let patter2 = std::env::args().nth(2).expect("no nd partterns");
+    println!("{:?}" , pattern);
+    std::any::type_name_of_val(&x)
+    println!("{:?}" , patter2);
+}
